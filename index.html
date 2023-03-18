@@ -11,13 +11,91 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Header and greeting the user-->
+    <!-- Header and greeting the user -->
     <header>
-        
+        <h1 class="bazinga"> <img class="logo" src="assets/images/bazinga-logo.png" alt="logo"> Bazinga!</h1>
+        <h2 class="bazinga">Let's play Rock-Paper-Scissors-Lizard-Spock!</h2>
     </header>
-   
-    
 
+    <!-- Game Area -->
+    <div class="game-area">
+        <div class="player-area">
+            <button class="btn-blue">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </button>
+            <button class="btn-blue">
+                <i class="fa-regular fa-hand"></i>
+            </button>
+            <button class="btn-blue">
+                <i class="fa-regular fa-hand-scissors"></i>
+            </button>
+            <button class="btn-blue">
+                <i class="fa-regular fa-hand-lizard"></i>
+            </button>
+            <button class="btn-blue">
+                <i class="fa-regular fa-hand-spock"></i>
+            </button>
+        </div>
+        <div class="sheldon-area">
+
+        </div>
+    </div>
+    <!-- Scores Area -->
+    <div class="score-area">
+        <h2 class="bazinga">Score</h2>
+        <p class="scores">You <span id="player-score">0</span></p>
+        <p class="scores">Sheldon C <span id="sheldon-score">0</p>
+    </div>
+
+    <!-- Rules section -->
+    <div class="rules-area">
+        <h2 class="bazinga">Sheldon explains the Rules</h2>
+        <img src="assets/images/rules.png" alt="rules">
+        <p class="rules-text">
+            "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, 
+            scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, 
+            rock crushes scissors."
+        </p>
+        <hr>
+        <table class="rules-table">
+            <tr>
+                <th>Choose</th>
+                <th>Wins against</th>
+                <th>Loses against</th>
+            </tr>
+            <tr>
+                <td>Rock <i class="fa-regular fa-hand-back-fist"></i></td>
+                <td>Lizard, Scissors</td>
+                <td>Paper, Spock</td>
+            </tr>
+            <tr>
+                <td>Paper <i class="fa-regular fa-hand"></i></td>
+                <td>Rock, Spock</td>
+                <td>Scissors, Lizard</td>
+            </tr>
+            <tr>
+                <td>Scissors <i class="fa-regular fa-hand-scissors"></i></td>
+                <td>Paper, Lizard</td>
+                <td>Rock, Spock</td>
+            </tr>
+            <tr>
+                <td>Lizard <i class="fa-regular fa-hand-lizard"></i></td>
+                <td>Paper, Spock</td>
+                <td>Rock, Scissors</td>
+            </tr>
+            <tr>
+                <td>Spock <i class="fa-regular fa-hand-spock"></i></td>
+                <td>Rock, Scissors</td>
+                <td>Paper, Lizard</td>
+            </tr>
+
+        </table>
+
+    </div>
+   
+    <!-- My script-->
     <script src="assets/js/script.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02fc7f6dd1.js" crossorigin="anonymous"></script>
 </body>
 </html>
