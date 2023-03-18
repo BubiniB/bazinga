@@ -1,1 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300&display=swap');
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #fff8ea;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.logo {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    
+ }
+
+h1 {
+    font-size: 400%;
+}
+
+.bazinga {
+    font-family: Bangers, sans-serif;
+    font-weight: 500;
+}
+
+table {
+    margin: 30px auto;
+    text-align: center;
+}
