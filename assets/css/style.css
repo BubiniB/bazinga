@@ -25,16 +25,17 @@ header {
 
 h1 {
     font-size: 450%;
+    color: red;
 }
 
 h2 {
     font-size: 300%;
+    color: #4169E1;
 }
 
 .bazinga {
     font-family: Bangers, sans-serif;
     font-weight: 500;
-    color: red;
 }
 
 .jump {
@@ -96,6 +97,7 @@ h2 {
     margin: 10px auto;
     padding: 30px;
     background-color: rgba(0,0,0,0.8);
+    font-size: 120%;
 }
 
 .rules-img {
@@ -103,6 +105,31 @@ h2 {
 }
 
 .rules-table {
-    margin: 30px auto;
-    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 50px auto;
+    text-align: left;
+    font-size: 120%;
+}
+
+.blue {
+    font-family: Bangers, sans-serif;
+    font-weight: 300;
+    color: #4169E1;
+}
+
+.yellow {
+    font-family: Bangers, sans-serif;
+    font-weight: 300;
+    color: #FFC000;
+}
+
+.red {
+    font-family: Bangers, sans-serif;
+    font-weight: 300;
+    color: red;
+}
+
+.rules-table td, th{
+    padding: 15px;
 }
