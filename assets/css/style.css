@@ -4,7 +4,8 @@
 body {
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    background-color: #060047;
+    background-color: black;
+    background: url(../images/galaxy.jpg) no-repeat;
     margin: 30px auto;
     text-align: center;
     color: white;
@@ -58,6 +59,12 @@ h2 {
 }
 
 /* Score Area */
+
+.you {
+    font-family: Bangers, sans-serif;
+    font-size: 150%;
+    color:#FFC000;
+}
 
 /* Rules Area */
 .rules-area {
