@@ -42,6 +42,9 @@ h2 {
     font-size: 80%;
 }
 
+.jump:hover {
+    color:#FFC000;
+}
 
 /* Game Area and buttons */
 
@@ -79,6 +82,12 @@ h2 {
     font-family: Bangers, sans-serif;
     font-size: 150%;
     color:#FFC000;
+}
+
+.sheldon {
+    font-family: Bangers, sans-serif;
+    font-size: 150%;
+    color: red;
 }
 
 /* Rules Area */
