@@ -198,5 +198,16 @@ h2 {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .game-area {
+        width: 60%;
+    }
+
+     .score-area {
+        width: 20%;
+    }
+
+    .rules-area {
+        width: 50%;
+    }
 
 }
