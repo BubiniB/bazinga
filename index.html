@@ -15,48 +15,50 @@
     <header>
         
         <h1 class="bazinga"><img id="logo" src="assets/images/bazinga-logo.png" alt="logo"> Bazinga!</h1>
-        <h2 class="bazinga">Let's play Rock-Paper-Scissors-Lizard-Spock!</h2>
+        <h2 class="bazinga">Let's play Rock-Paper-Scissors-Lizard-Spock! <br> <a class="jump" href="#rules">Read the Rules</a></h2> 
     </header>
 
     <!-- Game Area -->
     <div class="game-area">
         <div class="player-area">
-            <button class="btn-blue">
+            <h3>Play a game of Rock-Paper-Scissors-Lizard-Spock against Sheldon C. <br>
+                Choose by clicking on one of the buttons:</h3>
+            <button class="btn">
                 <i class="fa-regular fa-hand-back-fist"></i>
             </button>
-            <button class="btn-blue">
+            <button class="btn">
                 <i class="fa-regular fa-hand"></i>
             </button>
-            <button class="btn-blue">
+            <button class="btn">
                 <i class="fa-regular fa-hand-scissors"></i>
             </button>
-            <button class="btn-blue">
+            <button class="btn">
                 <i class="fa-regular fa-hand-lizard"></i>
             </button>
-            <button class="btn-blue">
+            <button class="btn">
                 <i class="fa-regular fa-hand-spock"></i>
             </button>
         </div>
-        <div class="sheldon-area">
+        <div class="result-area">
 
         </div>
     </div>
     <!-- Scores Area -->
     <div class="score-area">
         <h2 class="bazinga">Score</h2>
-        <p class="scores">You <span id="player-score">0</span></p>
-        <p class="scores">Sheldon C <span id="sheldon-score">0</p>
+        <p class="scores you">You: <span id="player-score">0</span></p>
+        <p class="scores sheldon">Sheldon C: <span id="sheldon-score">0</p>
     </div>
 
     <!-- Rules section -->
-    <div class="rules-area">
+    <div id="rules" class="rules-area">
         <h2 class="bazinga">Sheldon explains the Rules</h2>
         <p class="rules-text">
             "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, 
             scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, 
             rock crushes scissors."
         </p>
-        <img src="assets/images/rules.png" alt="rules">
+        <img class="rules-img" src="assets/images/rules.png" alt="rules">
         <table class="rules-table">
             <tr>
                 <th>Choose</th>

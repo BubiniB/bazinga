@@ -4,28 +4,60 @@
 body {
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    background-color: #fff8ea;
+    background-color: #060047;
     margin: 30px auto;
     text-align: center;
+    color: white;
 }
 
-.logo {
-    max-width: 50%;
-    max-height: 50%;
+#logo {
+    max-height: 60px;
     object-fit: contain;
-    
  }
 
 h1 {
-    font-size: 400%;
+    font-size: 450%;
+}
+
+h2 {
+    font-size: 300%;
 }
 
 .bazinga {
     font-family: Bangers, sans-serif;
     font-weight: 500;
+    color: red;
 }
 
-table {
+.jump {
+    color: white;
+    font-size: 80%;
+}
+
+.game-area {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.btn {
+    font-size: 300%;
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.rules-area {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.rules-img {
+    max-height: 400px;
+}
+
+.rules-table {
     margin: 30px auto;
     text-align: center;
 }
