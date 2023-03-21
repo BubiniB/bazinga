@@ -40,7 +40,8 @@ h2 {
 
 .jump {
     color: white;
-    font-size: 80%;
+    font-size: 50%;
+    font-weight: 250;
 }
 
 .jump:hover {
@@ -132,4 +133,46 @@ h2 {
 
 .rules-table td, th{
     padding: 15px;
+}
+
+/* Media Queries*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        width:fit-content;
+        margin: 30px auto;
+        text-align: center;
+    }
+    
+    header {
+        width: 100%
+    }
+
+    .game-area {
+        width: 90%;
+    }
+
+    .score-area {
+        width: 30%;
+    }
+
+    .rules-area {
+        width: 90%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
