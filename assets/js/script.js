@@ -23,13 +23,47 @@ let choices = {
     spock: {name: 'Spock', defeats: ['scissors, rock']},
 };
 
-let computerChoice=''
+let computerChoice = Math.random();
+if (computerChoice < 0.2) {
+    computerChoice = 'rock';
+} else if (computerChoice <= 0.4) {
+    computerChoice = 'paper';
+} else if (computerChoice <= 0.6) {
+    computerChoice = 'scissors';
+} else if (computerChoice <= 0.8) {
+    computerChoice = 'lizard';
+} else {
+    computerChoice = 'spock';
+}
+
 
 /**
  * Player select function
  */
 
+function select(playerChoice) {
+    checkResult (playerChoice);
 
+    switch (playerChoice) {
+        case 'rock':
+            rock.classList.add('selected');
+            break;
+        case 'paper':
+            paper.classList.add('selected');
+            break;
+        case 'scissors':
+            scissors.classList.add('selected');
+            break;
+        case 'lizard':
+            lizard.classList.add('selected');
+            break;
+        case 'spock':
+            spock.classList.add('selected');
+            break;
+        default:
+            break;
+    }
+}
 
 
 /**
