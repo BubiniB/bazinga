@@ -9,6 +9,27 @@ let spock = document.getElementById('spock');
 let playerScore = document.getElementById('player-score');
 let sheldonScore = document.getElementById('sheldon-score');
 
+let resultText = document.getElementById('result-area');
+
+/**
+ * Different choices and rules
+ */
+
+let choices = {
+    rock: {name: 'Rock', defeats: ['scissors', 'lizard']},
+    paper: {name: 'Paper', defeats: ['rock', 'spock']},
+    scissors: {name: 'Scissors', defeats: ['paper', 'lizard']},
+    lizard: {name: 'Lizard', defeats: ['paper', 'spock']},
+    spock: {name: 'Spock', defeats: ['scissors, rock']},
+};
+
+let computerChoice=''
+
+/**
+ * Player select function
+ */
+
+
 
 
 /**
