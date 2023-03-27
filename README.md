@@ -1,108 +1,130 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Cristina Ekqvist - Personal resume website
 
-Welcome BubiniB,
+Cristina Ekqvist is my professional resume website that aspires to showcase my new skillsets in the field of coding and at the same time give a short and concise summary of my professional background. This site is primarily targeted towards potential new employers and is supposed to be updated as my skills improve and more is to showcase. The page is fully responsive but is best enjoyed on desktop size screens.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsivness Mockup](/assets/images/responsiveness-showcase.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+On my webpage we have different feauters, such as a navigation bar and a footer, which are present on all pages. This lets users navigate easily on all pages and know exactly where they are. The footer gives users the opportunity to connect professionally with me on LinkedIn. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+There is a landing page with a background image and a small introduction, to let new visitors get an idea of what this page is about and who I am. There is a table for my professional career and former education to summarize my skillsets. I have created a mock-up contact form, which will be updated as I am becoming more profficient.
 
-`python3 -m http.server`
+The portfolio page is as of now empty due to pressing deadlines but will be updated as more projects will be completed. My aspiration is to provide a screenshot of each project, a short description of each project and a link, which will allow visitors to check out other webpages that I have created.
 
-A blue button should appear to click: _Make Public_,
+### Existing Features
 
-Another blue button should appear to click: _Open Browser_.
+- __Navigation Bar__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+- __The landing page__
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - The landing page has a background image to build contrasts with the webpage's color scheme and to give a more harmonius feel. For me it was important to have a landing page that does not overwhelm visitors and is easy on the eye and to understand. 
 
-To log into the Heroku toolbelt CLI:
+- __Welcome - section__
+  - There is a "Welcome" section, which very briefly states who I am as a means of marketing myself. This section is placed under the logo to draw the attention of visitors.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Landing Page](/assets/images/landing-page.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Get to know me! - section__
 
-------
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Features Left to Implement
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Testing 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __Responsiveness__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  - Responsiveness has been tested in DevTools in order to be able to test on as many devices and screen sizes as possible.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - A couple of examples of iPhone 5 screen size (320 x 568)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    - ![Landing page - iPhone 5]()
+    - ![Experience page - iPhone 5]
+    - ![Portfolio page - iPhone 5]
+    - ![Contact page - iPhone 5]
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  - A couple of examples of iPad screen size (768 x 1024)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    - ![Landing page - iPad]()
+    - ![Experience page - iPad]()
+    - ![Portfolio page - iPad]()
+    - ![Contact page - iPad]()
+  
+  - Summary of testing, summarized in a table
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    - ![Responsiveness tests]()
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- __Bugs__
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  - No bugs were found while programming this webpage. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- __Browser Compatibility__
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+  - I tested the page on Chrome, Edge, Firefox and Opera. I do not have access to Safari and can therefore not test it on that browser.
+  - Firefox seems to have problems displaying the chosen fonts.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  ![Browser compatibility]()
 
-------
+- __Lighthouse__
 
-## FAQ about the uptime script
+  - Performance test for desktop (Portfolio was omitted)
+    - ![Lighthouse desktop index.html]()
+    - ![Lighthouse desktop experience.html]()
+    - ![Lighthouse desktop contact.html]()
 
-**Why have you added this script?**
+   - Performance test for mobile (Portfolio was omitted)
+    - ![Lighthouse mobile index.html]()
+    - ![Lighthouse mobile experience.html]()
+    - ![Lighthouse mobile contact.html]()
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Validator Testing 
 
-**How will this affect me?**
+- HTML
+  - No errors were returned when passing through the official W3C validator. Tested all pages [W3C validator for all pages](/assets/images/w3c-html.png)
+- CSS
+  - No errors were found when passing through the official W3C CSS validator [(Jigsaw) validator](/assets/images/w3c-css.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Unfixed Bugs
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+There are no unfixed bugs. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Deployment 
 
-**So….?**
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - Select "Pages" on the left side bar.
+  - Source should be set to "Deploy from a branch" and branch should be set to "main" and folder to "/root".
+  - Click on save and wait for page to be deployed (can take several minutes).
+  - Refresh page and the link should appear on the top of the 'GitHub pages' page.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The live link can be found here - https://bubinib.github.io/cristina-ekqvist/index.html 
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Credits 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Code - Coding help
 
-**Anything more?**
+- Inspiration from the ["Love running"](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/tree/main/02-creating-the-header/05-navigation-styling-2) project was taken while creating the header.
+- When changing the style and layout (changing the order of the links) of the header/navigation bar on smaller screen sizes I found help on [Stack Overflow](https://stackoverflow.com/questions/39217732/is-it-possible-to-change-the-order-of-list-items-using-css3) 
+- When trying to change background image positions I found help on W3Schools [W3Schools](https://www.w3schools.com/cssref/pr_background-position.php).
+- I looked up how to implement media queries on [W3School Media queries](https://www.w3schools.com/css/css3_mediaqueries_ex.asp) and [W3Schools Examples on media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
+- I generated my GitHub and GitPod from the [Code Institute GitPod template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Content 
 
----
+- The icon in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The fonts were taken from [Google Fonts](https://fonts.google.com/)
+- I used Code Institutes template for creating this README. [README template](https://github.com/Code-Institute-Solutions/readme-template).
+- I took inspiration for my color scheme from [Colorhunt](https://colorhunt.co/palettes/earth).
+- I took inspiration on how I want my page to look like (style and layout) from an article on [Wixfresh](https://www.wixfresh.com/post/resume-websites).
+- I went to [Elementor](https://elementor.com/blog/font-pairing/) in order to find a good combination of different fonts.
 
-Happy coding!
+
+### Media
+
+- All background images used for this webpage were taken from [Pexels](https://www.pexels.com/sv-se/)
