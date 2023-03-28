@@ -141,7 +141,7 @@ function checkResult(playerChoice) {
             resultText.textContent = "You won!";
             incrementPlayerScore();
         } else {
-            resultText.textContent = "You lost!";
+            resultText.textContent = "Bazinga! You lost!";
             incrementSheldonScore();
         }
     }
