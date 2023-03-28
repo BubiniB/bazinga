@@ -6,7 +6,7 @@ body {
     font-weight: 300;
     background-color: black;
     background: url(../images/galaxy.jpg) no-repeat;
-    margin: 30px auto;
+    margin: 10px auto;
     text-align: center;
     color: white;
 }
@@ -14,7 +14,7 @@ body {
 /* Header and introduction */
 header {
     width: 80%;
-    margin: 10px auto;
+    margin: 5px auto;
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -24,12 +24,12 @@ header {
 }
 
 h1 {
-    font-size: 450%;
+    font-size: 400%;
     color: red;
 }
 
 h2 {
-    font-size: 300%;
+    font-size: 250%;
     color: #4169E1;
 }
 
@@ -52,16 +52,16 @@ h2 {
 
 .game-area {
     width: 50%;
-    margin: 10px auto;
-    padding: 30px;
+    margin: 2px auto;
+    padding: 10px;
     background-color: rgba(0,0,0,0.8);
     border-radius: 12px;
 }
 
 .btn {
-    font-size: 300%;
-    width: 100px;
-    height: 100px;
+    font-size: 250%;
+    width: 80px;
+    height: 80px;
     margin: 10px;
     border: none;
     border-radius: 50%;
@@ -81,27 +81,30 @@ h2 {
 
 .choice-area {
     width: 50%;
-    margin: 10px auto;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 5px;
     background-color: rgba(0,0,0,0.8);
     border-radius: 12px;
-    color:white;
+    color: #4169E1;
 }
 
 .result-area {
     width: 50%;
-    margin: 10px auto;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 5px;
     background-color: rgba(0,0,0,0.8);
     border-radius: 12px;
     color:white;
+    font-family: Bangers, sans-serif;
+    font-size: 140%;
+    font-weight: 250;
 }
 
 /* Score Area */
 .score-area {
     width: 20%;
     margin: 10px auto;
-    padding: 30px;
+    padding: 5px;
     background-color: rgba(0,0,0,0.8);
     border-radius: 12px;
 }
@@ -165,25 +168,64 @@ h2 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        width:fit-content;
-        margin: 30px auto;
+        margin: 5px auto;
         text-align: center;
     }
     
     header {
-        width: 100%
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    h3 {
+        font-size: 80%;
     }
 
     .game-area {
         width: 90%;
+        margin: 3px auto;
+    }
+
+    .btn {
+        font-size: 100%;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    .choice-area {
+        font-size: 80%;
     }
 
     .score-area {
-        width: 30%;
+        width: 50%;
+    }
+
+    .you {
+        font-size: 100%;
+    }
+
+    .sheldon {
+        font-size: 100%;
     }
 
     .rules-area {
-        width: 90%;
+        width: fit-content;
+        font-size: 80%;
+        text-align: center;
+        margin: 5px auto;
+    }
+
+    .rules-img {
+        max-height: 250px;
+    }
+
+    .rules-table {
+        font-size: 100%;
+        margin: 20px auto;
     }
 
 }

@@ -17,13 +17,13 @@ let spock = document.getElementById('spock');
 
 // For creating computer choices
 let sheldonRock = document.getElementById('sheldon-rock');
-let sheldonPaper = document.getElementById('sheldon-rock');
+let sheldonPaper = document.getElementById('sheldon-paper');
 let sheldonScissors = document.getElementById('sheldon-scissors');
 let sheldonLizard = document.getElementById('sheldon-lizard');
 let sheldonSpock = document.getElementById('sheldon-spock');
 
 // For creating text areas, which are going to be filled depending on the game outcome
-let choiceText = document.getElementById('choice-area');
+let choiceText = document.getElementById('choice-area')
 let resultText = document.getElementById('result-area');
 
 // For the score functions
@@ -35,7 +35,6 @@ let sheldonScore = document.getElementById('sheldon-score');
  * I found help on https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript
  * in order to reduce repition.
  */
-
 let choices = {
     rock: {name: 'Rock', defeats: ['scissors', 'lizard']},
     paper: {name: 'Paper', defeats: ['rock', 'spock']},
@@ -44,34 +43,10 @@ let choices = {
     spock: {name: 'Spock', defeats: ['scissors, rock']}
 };
 
-// Player select function, which also starts the game
-function select(playerChoice) {
-    startGame (playerChoice);
-    switch (playerChoice) {
-        case 'rock':
-            rock.classList.add('selected');
-            break;
-        case 'paper':
-            paper.classList.add('selected');
-            break;
-        case 'scissors':
-            scissors.classList.add('selected');
-            break;
-        case 'lizard':
-            lizard.classList.add('selected');
-            break;
-        case 'spock':
-            spock.classList.add('selected');
-            break;
-        default:
-            break;
-    }
-}
-
 // Function for random computer choice
 let sheldonChoice = '';
 function sheldonRandomChoice() {
-    let sheldonChoiceNumber = Math.random();
+  let sheldonChoiceNumber = Math.random();
   if (sheldonChoiceNumber < 0.2) {
     sheldonChoice = 'rock';
   } else if (sheldonChoiceNumber <= 0.4) {
@@ -82,7 +57,7 @@ function sheldonRandomChoice() {
     sheldonChoice = 'lizard';
   } else {
     sheldonChoice = 'spock';
-  }
+}
 }
 
 // Function for displaying computer choice
@@ -113,6 +88,30 @@ function displaySheldonChoice() {
     }
 }
 
+// Player select function, which also starts the game
+function select(playerChoice) {
+    startGame(playerChoice);
+        switch (playerChoice) {
+            case 'rock':
+                rock.classList.add('selected');
+                break;
+            case 'paper':
+                paper.classList.add('selected');
+                break;
+            case 'scissors':
+                scissors.classList.add('selected');
+                break;
+            case 'lizard':
+                lizard.classList.add('selected');
+                break;
+            case 'spock':
+                spock.classList.add('selected');
+                break;
+            default:
+                break;
+      }
+}
+
 /**
  * Function to increment player score
  * Influenced by Code Institutes 'Love Maths' challenge
@@ -141,7 +140,7 @@ function checkResult(playerChoice) {
             resultText.textContent = "You won!";
             incrementPlayerScore();
         } else {
-            resultText.textContent = "Bazinga! You lost!";
+            resultText.textContent = "You lost!";
             incrementSheldonScore();
         }
     }
