@@ -61,6 +61,33 @@ function sheldonRandomChoice() {
   }
 }
 
+// Function for displaying computer choice
+function displaySheldonChoice() {
+    switch (sheldonChoice) {
+        case 'rock':
+            sheldonRock.classList.add('selected-sheldon');
+            choiceText.innerText = 'Sheldon chose Rock';
+            break;
+        case 'paper':
+            sheldonRock.classList.add('selected-sheldon');
+            choiceText.innerText = 'Sheldon chose Paper';
+            break;
+        case 'Scissors':
+            sheldonRock.classList.add('selected-sheldon');
+            choiceText.innerText = 'Sheldon chose Scissors';
+            break;
+        case 'lizard':
+            sheldonRock.classList.add('selected-sheldon');
+            choiceText.innerText = 'Sheldon chose Lizard';
+            break;
+        case 'spock':
+            sheldonRock.classList.add('selected-sheldon');
+            choiceText.innerText = 'Sheldon chose Spock';
+            break;
+        default:
+            break;    
+    }
+}
 
 /**
  * Player select function
