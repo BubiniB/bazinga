@@ -1,3 +1,11 @@
+/**
+ * This game is influenced by YvonneDev
+ * https://diyifang.medium.com/spock-rock-game-with-javascript-f3cbe9ea61a4.
+ * I really liked the idea of having a more interactive game against
+ * the computer and at the same time keeping the code short and tidy,
+ * which I think she has achieved in her code.
+ */
+
 // Getting information from the DOM
 
 // For creating player choices
@@ -23,7 +31,9 @@ let playerScore = document.getElementById('player-score');
 let sheldonScore = document.getElementById('sheldon-score');
 
 /**
- * Different choices and rules
+ * Different choices and rules.
+ * I found help on https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript
+ * in order to reduce repition.
  */
 
 let choices = {
@@ -31,20 +41,24 @@ let choices = {
     paper: {name: 'Paper', defeats: ['rock', 'spock']},
     scissors: {name: 'Scissors', defeats: ['paper', 'lizard']},
     lizard: {name: 'Lizard', defeats: ['paper', 'spock']},
-    spock: {name: 'Spock', defeats: ['scissors, rock']},
+    spock: {name: 'Spock', defeats: ['scissors, rock']}
 };
 
-let computerChoice = Math.random();
-if (computerChoice < 0.2) {
-    computerChoice = 'rock';
-} else if (computerChoice <= 0.4) {
-    computerChoice = 'paper';
-} else if (computerChoice <= 0.6) {
-    computerChoice = 'scissors';
-} else if (computerChoice <= 0.8) {
-    computerChoice = 'lizard';
-} else {
-    computerChoice = 'spock';
+// Function for random computer choice
+let sheldonChoice = '';
+function sheldonRandomChoice() {
+    let sheldonChoiceNumber = Math.random();
+  if (sheldonChoiceNumber < 0.2) {
+    sheldonChoice = 'rock';
+  } else if (sheldonChoiceNumber <= 0.4) {
+    sheldonChoice = 'paper';
+  } else if (sheldonChoiceNumber <= 0.6) {
+    sheldonChoice = 'scissors';
+  } else if (sheldonChoiceNumber <= 0.8) {
+    sheldonChoice = 'lizard';
+  } else {
+    sheldonChoice = 'spock';
+  }
 }
 
 
