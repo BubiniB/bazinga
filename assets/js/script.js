@@ -89,27 +89,27 @@ function sheldonRandomChoice() {
 function displaySheldonChoice() {
     switch (sheldonChoice) {
         case 'rock':
-            sheldonRock.classList.add('selected-sheldon');
+            sheldonRock.classList.add('selected-sheldon');            
             choiceText.innerText = 'Sheldon chose Rock';
             break;
         case 'paper':
-            sheldonRock.classList.add('selected-sheldon');
+            sheldonPaper.classList.add('selected-sheldon');            
             choiceText.innerText = 'Sheldon chose Paper';
             break;
-        case 'Scissors':
-            sheldonRock.classList.add('selected-sheldon');
+        case 'scissors':
+            sheldonScissors.classList.add('selected-sheldon');            
             choiceText.innerText = 'Sheldon chose Scissors';
             break;
         case 'lizard':
-            sheldonRock.classList.add('selected-sheldon');
+            sheldonLizard.classList.add('selected-sheldon');            
             choiceText.innerText = 'Sheldon chose Lizard';
             break;
         case 'spock':
-            sheldonRock.classList.add('selected-sheldon');
+            sheldonSpock.classList.add('selected-sheldon');
             choiceText.innerText = 'Sheldon chose Spock';
             break;
         default:
-            break;    
+            break;
     }
 }
 
@@ -147,8 +147,23 @@ function checkResult(playerChoice) {
     }
 }
 
+// Function that clears the selected icons at the start of each round
+function clearSelected() {
+    rock.classList.remove('selected');
+    paper.classList.remove('selected');
+    scissors.classList.remove('selected');
+    lizard.classList.remove('selected');
+    spock.classList.remove('selected');
+    sheldonRock.classList.remove('selected-sheldon');
+    sheldonPaper.classList.remove('selected-sheldon');
+    sheldonScissors.classList.remove('selected-sheldon');
+    sheldonLizard.classList.remove('selected-sheldon');
+    sheldonSpock.classList.remove('selected-sheldon'); 
+}
+
 // Function for starting the game, which runs when user makes a selection
 function startGame(playerChoice) {
+    clearSelected();
     sheldonRandomChoice();
     displaySheldonChoice();
     checkResult(playerChoice);
