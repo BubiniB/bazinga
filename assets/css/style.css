@@ -71,6 +71,32 @@ h2 {
     color: #FFC000;
 }
 
+.selected {
+    color: #FFC000;
+}
+
+.selected-sheldon {
+    color: red;
+}
+
+.choice-area {
+    width: 50%;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 12px;
+    color:white;
+}
+
+.result-area {
+    width: 50%;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 12px;
+    color:white;
+}
+
 /* Score Area */
 .score-area {
     width: 20%;
