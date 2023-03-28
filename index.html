@@ -20,28 +20,50 @@
 
     <!-- Game Area -->
     <div class="game-area">
+        <!-- Player Area -->
         <div class="player-area">
             <h3>Play a game of Rock-Paper-Scissors-Lizard-Spock against Sheldon C. <br>
                 Choose by clicking on one of the buttons:</h3>
             <button class="btn" id="rock" onclick="select('rock')">
-                <i class="fa-regular fa-hand-back-fist"></i>
+                <i class="fa-regular fa-hand-back-fist" title="rock"></i>
             </button>
             <button class="btn" id="paper" onclick="select('paper')">
-                <i class="fa-regular fa-hand"></i>
+                <i class="fa-regular fa-hand" title="paper"></i>
             </button>
             <button class="btn" id="scissors" onclick="select('scissors')">
-                <i class="fa-regular fa-hand-scissors"></i>
+                <i class="fa-regular fa-hand-scissors" title="scissors"></i>
             </button>
             <button class="btn" id="lizard" onclick="select('lizard')">
-                <i class="fa-regular fa-hand-lizard"></i>
+                <i class="fa-regular fa-hand-lizard" title="lizard"></i>
             </button>
             <button class="btn" id="spock" onclick="select('spock')">
-                <i class="fa-regular fa-hand-spock"></i>
+                <i class="fa-regular fa-hand-spock" title="spock"></i>
             </button>
         </div>
-        <div class="result-area" id="result-area">
-
+        <!-- Computer Area -->
+        <div class="sheldon-area">
+            <h3>Sheldon chooses: <span id="computer-choice"></span></h3>
+            <button class="btn btn-sheldon" id="sheldon-rock">
+                <i class="fa-regular fa-hand-back-fist" title="rock"></i>
+            </button>
+            <button class="btn btn-sheldon" id="sheldon-paper">
+                <i class="fa-regular fa-hand" title="paper"></i>
+            </button>
+            <button class="btn btn-sheldon" id="sheldon-scissors">
+                <i class="fa-regular fa-hand-scissors" title="scissors"></i>
+            </button>
+            <button class="btn btn-sheldon" id="sheldon-lizard">
+                <i class="fa-regular fa-hand-lizard" title="lizard"></i>
+            </button>
+            <button class="btn btn-sheldon" id="sheldon-spock">
+                <i class="fa-regular fa-hand-spock" title="spock"></i>
+            </button>
         </div>
+        <!-- Choice Area: let's users see what the computer chose -->
+        <div class="choice-area" id="choice-area"></div>
+
+        <!-- Result Area: Gives a short notice if the user has won or lost the game -->
+        <div class="result-area" id="result-area"></div>
     </div>
     <!-- Scores Area -->
     <div class="score-area">
