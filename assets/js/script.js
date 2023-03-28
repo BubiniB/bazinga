@@ -44,6 +44,30 @@ let choices = {
     spock: {name: 'Spock', defeats: ['scissors, rock']}
 };
 
+// Player select function, which also starts the game
+function select(playerChoice) {
+    startGame (playerChoice);
+    switch (playerChoice) {
+        case 'rock':
+            rock.classList.add('selected');
+            break;
+        case 'paper':
+            paper.classList.add('selected');
+            break;
+        case 'scissors':
+            scissors.classList.add('selected');
+            break;
+        case 'lizard':
+            lizard.classList.add('selected');
+            break;
+        case 'spock':
+            spock.classList.add('selected');
+            break;
+        default:
+            break;
+    }
+}
+
 // Function for random computer choice
 let sheldonChoice = '';
 function sheldonRandomChoice() {
@@ -90,38 +114,8 @@ function displaySheldonChoice() {
 }
 
 /**
- * Player select function
- */
-
-function select(playerChoice) {
-    checkResult (playerChoice);
-
-    switch (playerChoice) {
-        case 'rock':
-            rock.classList.add('selected');
-            break;
-        case 'paper':
-            paper.classList.add('selected');
-            break;
-        case 'scissors':
-            scissors.classList.add('selected');
-            break;
-        case 'lizard':
-            lizard.classList.add('selected');
-            break;
-        case 'spock':
-            spock.classList.add('selected');
-            break;
-        default:
-            break;
-    }
-}
-
-
-
-
-/**
  * Function to increment player score
+ * Influenced by Code Institutes 'Love Maths' challenge
  */
 function incrementPlayerScore() {
     let currentScore = parseInt(playerScore.innerText);
@@ -130,8 +124,32 @@ function incrementPlayerScore() {
 
 /**
  * Function to increment computer's score
+ * Influenced by Code Institutes 'Love Maths' challenge
  */
 function incrementSheldonScore() {
     let currentScore = parseInt(sheldonScore.innerText);
     sheldonScore.innerText = ++currentScore;
+}
+
+// Function for checking the result of player and computer choices
+function checkResult(playerChoice) {
+    if (playerChoice === sheldonChoice) {
+        resultText.textContent = "It's a tie!";
+    } else {
+        let choice = choices[playerChoice];
+        if (choice.defeats.indexOf(sheldonChoice)>-1) {
+            resultText.textContent = "You won!";
+            incrementPlayerScore();
+        } else {
+            resultText.textContent = "You lost!";
+            incrementSheldonScore();
+        }
+    }
+}
+
+// Function for starting the game, which runs when user makes a selection
+function startGame(playerChoice) {
+    sheldonRandomChoice();
+    displaySheldonChoice();
+    checkResult(playerChoice);
 }
