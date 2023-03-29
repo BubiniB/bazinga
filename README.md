@@ -1,22 +1,24 @@
-# Cristina Ekqvist - Personal resume website
+# Bazinga! - A game of Rock-Paper-Scissors-Lizard-Spock
 
-Cristina Ekqvist is my professional resume website that aspires to showcase my new skillsets in the field of coding and at the same time give a short and concise summary of my professional background. This site is primarily targeted towards potential new employers and is supposed to be updated as my skills improve and more is to showcase. The page is fully responsive but is best enjoyed on desktop size screens.
+Bazinga! Is a webpage for playing a game of Rock-Paper-Scissors-Lizard-Spock against the computer inspired by the TV-show "The Big Bang Theory". The esthetics of the webpage are adjusted to fit the theme of the TV-show (highly educated physicists who also happen to be comic book nerds) and therefore there is a background image of space and some of the chosen fonts are comic book inspired. Players, who happen to know the TV-show, will recognize the computer oponent (Sheldon C.) and hopefully have a greater sense of immersion to the entire theme.
 
-![Responsivness Mockup](/assets/images/responsiveness-showcase.png)
+The game has been coded in JavaScript and the entire page is responsive to be enjoyed on every device.
+
+![Responsivness Mockup](/assets/images/readme-img/bazinga-responsiveness.png)
 
 ## Features 
 
-On my webpage we have different feauters, such as a navigation bar and a footer, which are present on all pages. This lets users navigate easily on all pages and know exactly where they are. The footer gives users the opportunity to connect professionally with me on LinkedIn. 
+On this webpage we have different feauters, such as a quick link down to the rules, in case some players are interested in looking them up, as well as a game area, a result area, a score area and a rules area. I will go in depth for every section/area of the game. 
 
-There is a landing page with a background image and a small introduction, to let new visitors get an idea of what this page is about and who I am. There is a table for my professional career and former education to summarize my skillsets. I have created a mock-up contact form, which will be updated as I am becoming more profficient.
-
-The portfolio page is as of now empty due to pressing deadlines but will be updated as more projects will be completed. My aspiration is to provide a screenshot of each project, a short description of each project and a link, which will allow visitors to check out other webpages that I have created.
+The overall idea for this webpage was to let the players have as much "interaction" with their oponent as possible, by making the computer's choices visible. The "Bangers" google font was chosen for the specific comic book feel and used throughout the entire page.
 
 ### Existing Features
 
-- __Navigation Bar__
+- __Header and link to rules area__
 
+  - The header has been designed to catch players' attention, give enough information on what this webpage is about and to set the tone for the rest of the page. I added a link to the rules section in case new players weren't familiar with how to play the game and in order to make the entire page more user friendly by not having to scroll down. The rules-link has a hover function, which makes it appear in bright yellow to make it more user friendly.
 
+![Header and link to rules](/assets/images/readme-img/header.png)
 
 - __The landing page__
 

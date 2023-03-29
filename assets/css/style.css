@@ -67,8 +67,16 @@ h2 {
     border-radius: 50%;
 }
 
+.btn-player {
+    cursor: pointer;
+}
+
 .btn-player:hover {
     color: #FFC000;
+}
+
+.btn-sheldon {
+    cursor: not-allowed;
 }
 
 .selected {
