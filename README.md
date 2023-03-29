@@ -88,7 +88,7 @@ The overall idea for this webpage was to let the players have as much "interacti
 
   The rules area has been created in case players are not familiar with how the game works or simply because they want to refresh their memory. With the link in the header, players can skip past the game if they want to read the rules first, alternatively scroll down and check on the rules after they have started the game. 
 
-  The rules section starts with a quote from "The Big Bang Theory" where Sheldon explains the rules, followed by an image, which shows how the different choices affect each other. These are more meant as gimmicks, as they can be hard to follow but help increase the feel of the page. I have also added a table to make the rules clearer to read.
+  The rules section starts with a quote from "The Big Bang Theory" where Sheldon explains the rules, followed by an image, which shows how the different choices affect each other. These are more meant as gimmicks, as they can be hard to follow but help increase the feel of the page. I have also added a table to make the rules clearer to read. In the table the icons from the buttons were added so that players recognize the choices.
 
   ![Rules area: quote and image](/assets/images/readme-img/rules-area-1.png)
   ![Rules area: table](/assets/images/readme-img/rules-area-2.png)
@@ -97,7 +97,8 @@ The overall idea for this webpage was to let the players have as much "interacti
 
 ### Features Left to Implement
 
-- 
+- I would like to add a sound queue for a win, for a loss and a tie
+- Display a picture for either a win, a loss or tie.
 
 ## Testing 
 
@@ -107,51 +108,56 @@ The overall idea for this webpage was to let the players have as much "interacti
 
   - A couple of examples of iPhone 5 screen size (320 x 568)
 
-    - ![Landing page - iPhone 5]()
-    - ![Experience page - iPhone 5]
-    - ![Portfolio page - iPhone 5]
-    - ![Contact page - iPhone 5]
+    - ![Bazinga - iPhone 5](/assets/images/readme-img/iphone5-1.png)
+    - ![Bazinga continuation - iPhone 5](/assets/images/readme-img/iphone5-2.png)
 
   - A couple of examples of iPad screen size (768 x 1024)
 
-    - ![Landing page - iPad]()
-    - ![Experience page - iPad]()
-    - ![Portfolio page - iPad]()
-    - ![Contact page - iPad]()
+    - ![Bazinga - iPad](/assets/images/readme-img/ipad-1.png)
+    - ![Bazinga continuation - iPad](/assets/images/readme-img/ipad-2.png)
   
   - Summary of testing, summarized in a table
 
-    - ![Responsiveness tests]()
+    - Everything is running as expected.
+
+     ![Responsiveness tests](/assets/images/readme-img/responsiveness-bazinga.png)
 
 - __Bugs__
 
-  - No bugs were found while programming this webpage. 
+  - My first syntax error happened when I wrote computerChoice() instead of sheldonChoice(), with the result that the game couldn't be played.
+  - I forgot to add the parameter playerChoice inside the checkResult() function when calling the startGame(playerChoice) function, which gave an error that "defeats" was undefined and the game wouldn't run.
+  - I forgot to change classList to "selected-sheldon" inside the displaySheldonChoice() function when copying from my select() function, which resulted in that the computer choices weren't highlighted.
+  - I had missed some quotation marks inside the following array, which resulted in that whenever the player chose "Spock", they would automatically lose:
+      - spock: {name: 'Spock', defeats: ['scissors, rock']} (This is how it looked like).
+  
 
 - __Browser Compatibility__
 
   - I tested the page on Chrome, Edge, Firefox and Opera. I do not have access to Safari and can therefore not test it on that browser.
-  - Firefox seems to have problems displaying the chosen fonts.
+  - Everyting is running as expected.
 
-  ![Browser compatibility]()
+  ![Browser compatibility](/assets/images/readme-img/browser-compatibility-bazinga.png)
 
 - __Lighthouse__
 
-  - Performance test for desktop (Portfolio was omitted)
-    - ![Lighthouse desktop index.html]()
-    - ![Lighthouse desktop experience.html]()
-    - ![Lighthouse desktop contact.html]()
+  - Performance test for desktop 
+    - ![Lighthouse desktop index.html](/assets/images/readme-img/lighthouse-desktop.png)
 
-   - Performance test for mobile (Portfolio was omitted)
-    - ![Lighthouse mobile index.html]()
-    - ![Lighthouse mobile experience.html]()
-    - ![Lighthouse mobile contact.html]()
+   - Performance test for mobile 
+    - ![Lighthouse mobile index.html](/assets/images/readme-img/lighthouse-mobile.png)
+    
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official W3C validator. Tested all pages [W3C validator for all pages](/assets/images/w3c-html.png)
+  - No errors were returned when passing through the official W3C validator. Tested all pages W3C validator for all pages 
+    - ![HTML](/assets/images/readme-img/html-validator.png)
 - CSS
-  - No errors were found when passing through the official W3C CSS validator [(Jigsaw) validator](/assets/images/w3c-css.png)
+  - No errors were found when passing through the official W3C CSS validator Jigsaw validator. 
+    - ![CSS](/assets/images/readme-img/css-validator.png)
+- JavaScript
+  - No errors were returned when passing through the official JavaScript validator. There are however warnings because I used "let" for my variables. I have to admit that I do not understand the warnings and what I am supposed to do for fixing them.
+    - ![JavaScript](/assets/images/readme-img/js-validator.png).
 
 ### Unfixed Bugs
 
@@ -166,7 +172,7 @@ There are no unfixed bugs.
   - Click on save and wait for page to be deployed (can take several minutes).
   - Refresh page and the link should appear on the top of the 'GitHub pages' page.
 
-The live link can be found here - https://bubinib.github.io/cristina-ekqvist/index.html 
+The live link can be found here - https://bubinib.github.io/bazinga/ 
 
 
 ## Credits 

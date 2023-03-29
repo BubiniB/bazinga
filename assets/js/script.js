@@ -23,7 +23,7 @@ let sheldonLizard = document.getElementById('sheldon-lizard');
 let sheldonSpock = document.getElementById('sheldon-spock');
 
 // For creating text areas, which are going to be filled depending on the game outcome
-let choiceText = document.getElementById('choice-area')
+let choiceText = document.getElementById('choice-area');
 let resultText = document.getElementById('result-area');
 
 // For the score functions
@@ -44,7 +44,7 @@ let choices = {
 };
 
 // Function for random computer choice
-let sheldonChoice = '';
+let sheldonChoice = 'null';
 function sheldonRandomChoice() {
   let sheldonChoiceNumber = Math.random();
   if (sheldonChoiceNumber < 0.2) {
