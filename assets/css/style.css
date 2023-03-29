@@ -86,6 +86,7 @@ h2 {
     background-color: rgba(0,0,0,0.8);
     border-radius: 12px;
     color: #4169E1;
+    font-weight: bold;
 }
 
 .result-area {
