@@ -40,7 +40,7 @@ let choices = {
     paper: {name: 'Paper', defeats: ['rock', 'spock']},
     scissors: {name: 'Scissors', defeats: ['paper', 'lizard']},
     lizard: {name: 'Lizard', defeats: ['paper', 'spock']},
-    spock: {name: 'Spock', defeats: ['scissors, rock']}
+    spock: {name: 'Spock', defeats: ['scissors', 'rock']}
 };
 
 // Function for random computer choice
@@ -138,9 +138,11 @@ function checkResult(playerChoice) {
         let choice = choices[playerChoice];
         if (choice.defeats.indexOf(sheldonChoice)>-1) {
             resultText.textContent = "You won!";
+            resultText.classList.add('result-win');
             incrementPlayerScore();
         } else {
-            resultText.textContent = "You lost!";
+            resultText.textContent = "Bazinga! You lost!";
+            resultText.classList.add('result-lose');
             incrementSheldonScore();
         }
     }
@@ -158,6 +160,8 @@ function clearSelected() {
     sheldonScissors.classList.remove('selected-sheldon');
     sheldonLizard.classList.remove('selected-sheldon');
     sheldonSpock.classList.remove('selected-sheldon'); 
+    resultText.classList.remove('result-win');
+    resultText.classList.remove('result-lose');
 }
 
 // Function for starting the game, which runs when user makes a selection
