@@ -4,6 +4,8 @@ Bazinga! Is a webpage for playing a game of Rock-Paper-Scissors-Lizard-Spock aga
 
 The game has been coded in JavaScript and the entire page is responsive to be enjoyed on every device.
 
+This game and the code behind it is influenced by [YvonneDev](https://diyifang.medium.com/spock-rock-game-with-javascript-f3cbe9ea61a4). I really liked the idea of having a more interactive game against the computer and at the same time keeping the code short and tidy, which I think she has achieved in her code.
+
 ![Responsivness Mockup](/assets/images/readme-img/bazinga-responsiveness.png)
 
 ## Features 
@@ -27,6 +29,8 @@ The overall idea for this webpage was to let the players have as much "interacti
     - Computer area
     - Choice area
     - Result area.
+  
+  ![Entire game area](/assets/images/readme-img/game-area.png)
 
 - __Player area__
 
@@ -52,7 +56,42 @@ The overall idea for this webpage was to let the players have as much "interacti
 
   ![Alert](/assets/images/readme-img/alert.png)
 
-- __Get to know me! - section__
+- __Choice area__
+
+  The choice area has been created to further highlight which choice the computer has made in case it is hard for players to follow what the different icons stand for. With the displaySheldonChoice() switch function I have added a small text, which allows players to read which choice the computer has made.
+
+  ![Choice area](/assets/images/readme-img/choice-area.png) 
+
+- __Result area__
+
+  The result area shows whether the player has won, lost or had a tie against the computer. The if/else checkResult() function helps determine what the result of the choices are and displays a message under the computer choice. It's supposed to highlight the result by adding the player and computer color depending on the outcome: yellow for a win, red for a loss. A tie is displayed in a neutral color.
+
+  Here is a picture of how it looks like when the player wins:
+
+  ![Player win](/assets/images/readme-img/result-area-win.png)
+
+  Here is a picture of how it looks like when the player loses:
+
+  ![Player loss](/assets/images/readme-img/result-area-loss.png)
+
+  Here is a picture of how it looks like when the result is a tie:
+
+  ![Tie](/assets/images/readme-img/result-area-tie.png)
+
+- __Score area__
+
+  The score area shows how many games either the player or the computer has won. It is supposed to be a fun counter in case players want to keep track of their games' outcome. The color are adjusted to fit the rest of the game, which means that yellow is for the player's win record and red for the computer's. This is achieved by the incrementPlayerScore() and incrementSheldonScore() functions, which are inspired by the Code Institute [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master/05-tidying-up/01-a-few-last-things) challenge.
+
+  ![Score area](/assets/images/readme-img/score-area.png)
+
+- __Rules area__
+
+  The rules area has been created in case players are not familiar with how the game works or simply because they want to refresh their memory. With the link in the header, players can skip past the game if they want to read the rules first, alternatively scroll down and check on the rules after they have started the game. 
+
+  The rules section starts with a quote from "The Big Bang Theory" where Sheldon explains the rules, followed by an image, which shows how the different choices affect each other. These are more meant as gimmicks, as they can be hard to follow but help increase the feel of the page. I have also added a table to make the rules clearer to read.
+
+  ![Rules area: quote and image](/assets/images/readme-img/rules-area-1.png)
+  ![Rules area: table](/assets/images/readme-img/rules-area-2.png)
 
 
 
