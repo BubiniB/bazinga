@@ -48,7 +48,9 @@ The overall idea for this webpage was to let the players have as much "interacti
 
   The cursor for every button has been changed to "not allowed" so that players understand that they cannot make a choice for the computer. I have also added onclick alerts in case players might try to anyway, with messages from "Sheldon" for further immersion.
 
-![Landing Page](/assets/images/landing-page.png)
+  ![Not-allowed pointer](/assets/images/readme-img/not-allowed.png)
+
+  ![Alert](/assets/images/readme-img/alert.png)
 
 - __Get to know me! - section__
 
