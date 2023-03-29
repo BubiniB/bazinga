@@ -20,7 +20,7 @@ let sheldonRock = document.getElementById('sheldon-rock');
 let sheldonPaper = document.getElementById('sheldon-paper');
 let sheldonScissors = document.getElementById('sheldon-scissors');
 let sheldonLizard = document.getElementById('sheldon-lizard');
-let sheldonSpock = document.getElementById('sheldon-spock');
+let sheldonSpock = document.getElementById('sheldon-spock'); 
 
 // For creating text areas, which are going to be filled depending on the game outcome
 let choiceText = document.getElementById('choice-area');
@@ -57,7 +57,7 @@ function sheldonRandomChoice() {
     sheldonChoice = 'lizard';
   } else {
     sheldonChoice = 'spock';
-}
+  }
 }
 
 // Function for displaying computer choice

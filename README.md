@@ -93,7 +93,46 @@ The overall idea for this webpage was to let the players have as much "interacti
   ![Rules area: quote and image](/assets/images/readme-img/rules-area-1.png)
   ![Rules area: table](/assets/images/readme-img/rules-area-2.png)
 
+### JavaScript 
 
+- __Getting information from the DOM__
+
+  - When making the game I wanted to first add all the relevant variables, which were going to be used in the game to make sure I had everything I needed for making the game work. 
+  - During the coding process I would come back to this list and update it depending on if I would see the need for new variables to arise.
+
+- __Variable "choices"__
+
+  - As mentioned, I have taken inspiration by [YvonneDev](https://diyifang.medium.com/spock-rock-game-with-javascript-f3cbe9ea61a4) as well as another forum thread on [StackOverflow](https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript) in order to create a game, which not only is user friendly but keeps the code behind it tidy and object oriented. For this I have chosen to create "choices" variable and store an array with different information types inside of it, which would help build other functions.
+
+- __sheldonRandomChoice function__
+
+  - The function was created with help of a Math.random function to randomize the answers, as well as an if/else statement, which helps the program to know when to take certain choices (Rock, Paper, Scissors, Lizard or Spock).
+
+- __displaySheldonChoice function__
+
+  - This function has been created so that one code block with the computer choice would be executed and show what selection the computer has been made. This was best achieved with a switch statement.
+
+- __select(playerChoice) function__
+
+  - This function executes when the player clicks on a button since an onclick event was added in the HTML file. A switch statement was used here as well, as only a certain part of the code block needs to run, when the player makes a choice.
+  - It is also the function, which starts the entire game since it's supposed to start when the player has made a choice, thus the runGame function inside of it.
+
+- __incrementPlayerScore and incrementSheldonScore__
+
+  - These functions were inspired by the ["Love Maths"](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master/05-tidying-up/01-a-few-last-things) project. ParseInt was used in order to return string values as integers.
+
+- __checkResult(playerChoice)__
+
+  - This function was used to check the result of the different choices. An if/else statement was used for the different outcomes and in order to not having to write many code lines for all the different outcomes, the indexOf() method was used. indexOf() returns -1 if the value is not found, so as long as the player choice (rock, paper, scissors, lizard or spock) has the value of defeat, it will be greater than -1, which means that the player will win. Should the value not appear, it cannot be greater than -1, which will mean the player loses.
+  - __choice.defeats.indexOf(sheldonChoice)>-1__
+
+- __clearSelected function__
+
+  - This function clears out all highlighted choices, as it would be confusing for player to see their previous choices at the start of each new game round. This function is rather simple as I could not find a better way to keep the code shorter and object oriented in the time frame, as well as understand the steps that were taken to make it so.
+
+- __startGame function__
+
+  - The function, which triggers all other functions and runs the game.
 
 ### Features Left to Implement
 
@@ -179,22 +218,23 @@ The live link can be found here - https://bubinib.github.io/bazinga/
 
 ### Code - Coding help
 
-- Inspiration from the ["Love running"](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/tree/main/02-creating-the-header/05-navigation-styling-2) project was taken while creating the header.
-- When changing the style and layout (changing the order of the links) of the header/navigation bar on smaller screen sizes I found help on [Stack Overflow](https://stackoverflow.com/questions/39217732/is-it-possible-to-change-the-order-of-list-items-using-css3) 
-- When trying to change background image positions I found help on W3Schools [W3Schools](https://www.w3schools.com/cssref/pr_background-position.php).
+- My main inspiration for my functions and layout for my JavaScript file come from [YvonneDev](https://diyifang.medium.com/spock-rock-game-with-javascript-f3cbe9ea61a4), as I really liked the use of highlighting computer choices, making the game more user friendly, as well as keeping the code tidy and object oriented.
+- When googling for inspiration of how a game of rock-paper-scissors could look like, I found helpful code, which inspired me further in creating an array for the 'choices' variable and using it in the checkResult(playerChoice) function. The forum thread is on [StackOverflow](https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript).
 - I looked up how to implement media queries on [W3School Media queries](https://www.w3schools.com/css/css3_mediaqueries_ex.asp) and [W3Schools Examples on media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
 - I generated my GitHub and GitPod from the [Code Institute GitPod template](https://github.com/Code-Institute-Org/gitpod-full-template)
+- I looked at the ["Love Maths"](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master/05-tidying-up/01-a-few-last-things) project for the code on how to implement a favicon. I converted my png to favicon on [favicon.io](https://favicon.io/favicon-converter/).
+- Inspiration from the ["Love Maths"](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/tree/master/05-tidying-up/01-a-few-last-things) project was taken in creating the score function.
+- I looked at [W3School's example](https://www.w3schools.com/cssref/pr_class_cursor.php) for changing the look of mouse cursors.
 
 ### Content 
 
-- The icon in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The icons for the buttons were taken from [Font Awesome](https://fontawesome.com/)
 - The fonts were taken from [Google Fonts](https://fonts.google.com/)
 - I used Code Institutes template for creating this README. [README template](https://github.com/Code-Institute-Solutions/readme-template).
-- I took inspiration for my color scheme from [Colorhunt](https://colorhunt.co/palettes/earth).
-- I took inspiration on how I want my page to look like (style and layout) from an article on [Wixfresh](https://www.wixfresh.com/post/resume-websites).
-- I went to [Elementor](https://elementor.com/blog/font-pairing/) in order to find a good combination of different fonts.
+- The quote for the rules was taken from [Big Bang Theory fansite](https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/).
 
 
 ### Media
 
-- All background images used for this webpage were taken from [Pexels](https://www.pexels.com/sv-se/)
+- The background image used for this webpage was taken from [Pexels](https://www.pexels.com/sv-se/)
+- The pngs for the rules image, favicon and logo were taken from [FAVPNG](https://favpng.com/png_search/rock-paper-scissors-lizard-spock).
