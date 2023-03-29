@@ -8,7 +8,7 @@ The game has been coded in JavaScript and the entire page is responsive to be en
 
 ## Features 
 
-On this webpage we have different feauters, such as a quick link down to the rules, in case some players are interested in looking them up, as well as a game area, a result area, a score area and a rules area. I will go in depth for every section/area of the game. 
+On this webpage we have different feauters, such as a quick link down to the rules, in case some players are interested in looking them up, as well as a game area, a choice area, a result area, a score area and a rules area. I will go in depth for every section/area of the game. 
 
 The overall idea for this webpage was to let the players have as much "interaction" with their oponent as possible, by making the computer's choices visible. The "Bangers" google font was chosen for the specific comic book feel and used throughout the entire page.
 
@@ -20,12 +20,33 @@ The overall idea for this webpage was to let the players have as much "interacti
 
 ![Header and link to rules](/assets/images/readme-img/header.png)
 
-- __The landing page__
+- __Game area__
 
-  - The landing page has a background image to build contrasts with the webpage's color scheme and to give a more harmonius feel. For me it was important to have a landing page that does not overwhelm visitors and is easy on the eye and to understand. 
+   The game area consists of four different sections:
+    - Player area
+    - Computer area
+    - Choice area
+    - Result area.
 
-- __Welcome - section__
-  - There is a "Welcome" section, which very briefly states who I am as a means of marketing myself. This section is placed under the logo to draw the attention of visitors.
+- __Player area__
+
+  The player area consists of a small introduction of the oponent, a short explanation on how to start the game and make a selection, as well as buttons, which the player can click on to make a selection and start the actual game.
+
+  The player buttons have a hover function, which makes the icons appear yellow/golden to highlight, which alternativ the player is choosing. The cursor has also been changed to "pointer" to make it more clear for players, which areas can be clicked on.
+
+  Every player button has a onclick event, which starts the game with the select() function and allows for the player selection to be highlighted for the duration of the game round.
+
+  ![Player area](/assets/images/readme-img/player-area.png)
+
+- __Computer area__
+ 
+  The computer area is the area where the computer makes its choice. I wanted to have a more interactive feel to the page and let the player see which choices have been made to make the entire experience more fun.
+
+  The area consists of the same buttons as the player area but when starting the game by making a selection, the computer's choice will be highlighted in red. This was achieved by adding the displaySheldonChoice() switch function. The highlight resets whenever a new game round is started.
+
+  ![Computer area](/assets/images/readme-img/computer-area.png)
+
+  The cursor for every button has been changed to "not allowed" so that players understand that they cannot make a choice for the computer. I have also added onclick alerts in case players might try to anyway, with messages from "Sheldon" for further immersion.
 
 ![Landing Page](/assets/images/landing-page.png)
 
