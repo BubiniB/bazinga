@@ -1,10 +1,10 @@
-/**
- * This game is influenced by YvonneDev
- * https://diyifang.medium.com/spock-rock-game-with-javascript-f3cbe9ea61a4.
- * I really liked the idea of having a more interactive game against
- * the computer and at the same time keeping the code short and tidy,
- * which I think she has achieved in her code.
- */
+/*
+This game is influenced by YvonneDev
+https://diyifang.medium.com/spock-rock-game-with-javascript-f3cbe9ea61a4.
+I really liked the idea of having a more interactive game against
+the computer and at the same time keeping the code short and tidy,
+which I think she has achieved in her code.
+*/
 
 // Getting information from the DOM
 
@@ -30,11 +30,10 @@ let resultText = document.getElementById('result-area');
 let playerScore = document.getElementById('player-score');
 let sheldonScore = document.getElementById('sheldon-score');
 
-/**
- * Different choices and rules.
- * I found help on https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript
- * in order to reduce repition.
- */
+/*
+Different choices and rules put together as an object in order to reduce repition.
+I found help on https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript
+*/
 let choices = {
     rock: {name: 'Rock', defeats: ['scissors', 'lizard']},
     paper: {name: 'Paper', defeats: ['rock', 'spock']},
@@ -112,19 +111,19 @@ function select(playerChoice) {
       }
 }
 
-/**
- * Function to increment player score
- * Influenced by Code Institutes 'Love Maths' challenge
- */
+/*
+Function to increment player score and
+influenced by Code Institutes 'Love Maths' challenge
+*/
 function incrementPlayerScore() {
     let currentScore = parseInt(playerScore.innerText);
     playerScore.innerText = ++currentScore;
 }
 
-/**
- * Function to increment computer's score
- * Influenced by Code Institutes 'Love Maths' challenge
- */
+/*
+Function to increment computer's score and
+influenced by Code Institutes 'Love Maths' challenge
+*/
 function incrementSheldonScore() {
     let currentScore = parseInt(sheldonScore.innerText);
     sheldonScore.innerText = ++currentScore;
