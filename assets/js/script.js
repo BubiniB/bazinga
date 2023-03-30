@@ -20,7 +20,7 @@ let sheldonRock = document.getElementById('sheldon-rock');
 let sheldonPaper = document.getElementById('sheldon-paper');
 let sheldonScissors = document.getElementById('sheldon-scissors');
 let sheldonLizard = document.getElementById('sheldon-lizard');
-let sheldonSpock = document.getElementById('sheldon-spock'); 
+let sheldonSpock = document.getElementById('sheldon-spock');
 
 // For creating text areas, which are going to be filled depending on the game outcome
 let choiceText = document.getElementById('choice-area');
@@ -35,47 +35,63 @@ Different choices and rules put together as an object in order to reduce repitio
 I found help on https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript
 */
 let choices = {
-    rock: {name: 'Rock', defeats: ['scissors', 'lizard']},
-    paper: {name: 'Paper', defeats: ['rock', 'spock']},
-    scissors: {name: 'Scissors', defeats: ['paper', 'lizard']},
-    lizard: {name: 'Lizard', defeats: ['paper', 'spock']},
-    spock: {name: 'Spock', defeats: ['scissors', 'rock']}
+    rock: {
+        name: 'Rock',
+        defeats: ['scissors', 'lizard']
+    },
+    paper: {
+        name: 'Paper',
+        defeats: ['rock', 'spock']
+    },
+    scissors: {
+        name: 'Scissors',
+        defeats: ['paper', 'lizard']
+    },
+    lizard: {
+        name: 'Lizard',
+        defeats: ['paper', 'spock']
+    },
+    spock: {
+        name: 'Spock',
+        defeats: ['scissors', 'rock']
+    }
 };
 
 // Function for random computer choice
 let sheldonChoice = 'null';
+
 function sheldonRandomChoice() {
-  let sheldonChoiceNumber = Math.random();
-  if (sheldonChoiceNumber < 0.2) {
-    sheldonChoice = 'rock';
-  } else if (sheldonChoiceNumber <= 0.4) {
-    sheldonChoice = 'paper';
-  } else if (sheldonChoiceNumber <= 0.6) {
-    sheldonChoice = 'scissors';
-  } else if (sheldonChoiceNumber <= 0.8) {
-    sheldonChoice = 'lizard';
-  } else {
-    sheldonChoice = 'spock';
-  }
+    let sheldonChoiceNumber = Math.random();
+    if (sheldonChoiceNumber < 0.2) {
+        sheldonChoice = 'rock';
+    } else if (sheldonChoiceNumber <= 0.4) {
+        sheldonChoice = 'paper';
+    } else if (sheldonChoiceNumber <= 0.6) {
+        sheldonChoice = 'scissors';
+    } else if (sheldonChoiceNumber <= 0.8) {
+        sheldonChoice = 'lizard';
+    } else {
+        sheldonChoice = 'spock';
+    }
 }
 
 // Function for displaying computer choice
 function displaySheldonChoice() {
     switch (sheldonChoice) {
         case 'rock':
-            sheldonRock.classList.add('selected-sheldon');            
+            sheldonRock.classList.add('selected-sheldon');
             choiceText.innerText = 'Sheldon chose Rock';
             break;
         case 'paper':
-            sheldonPaper.classList.add('selected-sheldon');            
+            sheldonPaper.classList.add('selected-sheldon');
             choiceText.innerText = 'Sheldon chose Paper';
             break;
         case 'scissors':
-            sheldonScissors.classList.add('selected-sheldon');            
+            sheldonScissors.classList.add('selected-sheldon');
             choiceText.innerText = 'Sheldon chose Scissors';
             break;
         case 'lizard':
-            sheldonLizard.classList.add('selected-sheldon');            
+            sheldonLizard.classList.add('selected-sheldon');
             choiceText.innerText = 'Sheldon chose Lizard';
             break;
         case 'spock':
@@ -90,25 +106,25 @@ function displaySheldonChoice() {
 // Player select function, which also starts the game
 function select(playerChoice) {
     startGame(playerChoice);
-        switch (playerChoice) {
-            case 'rock':
-                rock.classList.add('selected');
-                break;
-            case 'paper':
-                paper.classList.add('selected');
-                break;
-            case 'scissors':
-                scissors.classList.add('selected');
-                break;
-            case 'lizard':
-                lizard.classList.add('selected');
-                break;
-            case 'spock':
-                spock.classList.add('selected');
-                break;
-            default:
-                break;
-      }
+    switch (playerChoice) {
+        case 'rock':
+            rock.classList.add('selected');
+            break;
+        case 'paper':
+            paper.classList.add('selected');
+            break;
+        case 'scissors':
+            scissors.classList.add('selected');
+            break;
+        case 'lizard':
+            lizard.classList.add('selected');
+            break;
+        case 'spock':
+            spock.classList.add('selected');
+            break;
+        default:
+            break;
+    }
 }
 
 /*
@@ -135,7 +151,7 @@ function checkResult(playerChoice) {
         resultText.textContent = "It's a tie!";
     } else {
         let choice = choices[playerChoice];
-        if (choice.defeats.indexOf(sheldonChoice)>-1) {
+        if (choice.defeats.indexOf(sheldonChoice) > -1) {
             resultText.textContent = "You won!";
             resultText.classList.add('result-win');
             incrementPlayerScore();
@@ -158,7 +174,7 @@ function clearSelected() {
     sheldonPaper.classList.remove('selected-sheldon');
     sheldonScissors.classList.remove('selected-sheldon');
     sheldonLizard.classList.remove('selected-sheldon');
-    sheldonSpock.classList.remove('selected-sheldon'); 
+    sheldonSpock.classList.remove('selected-sheldon');
     resultText.classList.remove('result-win');
     resultText.classList.remove('result-lose');
 }
