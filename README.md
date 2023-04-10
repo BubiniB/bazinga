@@ -141,6 +141,7 @@ The overall idea for this webpage was to let the players have as much "interacti
 
 - I would like to add a sound queue for a win, for a loss and a tie
 - Display a picture for either a win, a loss or tie.
+- Add "best to 10" as game end and game resetting afterwards
 
 ## Testing 
 
